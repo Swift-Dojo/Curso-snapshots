@@ -14,19 +14,11 @@
 		F24FDE6427D5236800521649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24FDE6327D5236800521649 /* Assets.xcassets */; };
 		F24FDE6727D5236800521649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24FDE6527D5236800521649 /* LaunchScreen.storyboard */; };
 		F24FDE7227D5236900521649 /* CursoSnapshotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */; };
-		F24FDE7C27D5236900521649 /* CursoSnapshotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FDE7B27D5236900521649 /* CursoSnapshotsUITests.swift */; };
-		F24FDE7E27D5236900521649 /* CursoSnapshotsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FDE7D27D5236900521649 /* CursoSnapshotsUITestsLaunchTests.swift */; };
+		F24FDE8C27D524E700521649 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F24FDE8B27D524E700521649 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F24FDE6E27D5236900521649 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F24FDE4F27D5236500521649 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F24FDE5627D5236500521649;
-			remoteInfo = CursoSnapshots;
-		};
-		F24FDE7827D5236900521649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F24FDE4F27D5236500521649 /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		F24FDE6827D5236800521649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24FDE6D27D5236900521649 /* CursoSnapshotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CursoSnapshotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoSnapshotsTests.swift; sourceTree = "<group>"; };
-		F24FDE7727D5236900521649 /* CursoSnapshotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CursoSnapshotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F24FDE7B27D5236900521649 /* CursoSnapshotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoSnapshotsUITests.swift; sourceTree = "<group>"; };
-		F24FDE7D27D5236900521649 /* CursoSnapshotsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoSnapshotsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F24FDE7427D5236900521649 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F24FDE8C27D524E700521649 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +64,6 @@
 			children = (
 				F24FDE5927D5236500521649 /* CursoSnapshots */,
 				F24FDE7027D5236900521649 /* CursoSnapshotsTests */,
-				F24FDE7A27D5236900521649 /* CursoSnapshotsUITests */,
 				F24FDE5827D5236500521649 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +73,6 @@
 			children = (
 				F24FDE5727D5236500521649 /* CursoSnapshots.app */,
 				F24FDE6D27D5236900521649 /* CursoSnapshotsTests.xctest */,
-				F24FDE7727D5236900521649 /* CursoSnapshotsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +97,6 @@
 				F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */,
 			);
 			path = CursoSnapshotsTests;
-			sourceTree = "<group>";
-		};
-		F24FDE7A27D5236900521649 /* CursoSnapshotsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F24FDE7B27D5236900521649 /* CursoSnapshotsUITests.swift */,
-				F24FDE7D27D5236900521649 /* CursoSnapshotsUITestsLaunchTests.swift */,
-			);
-			path = CursoSnapshotsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,27 +133,12 @@
 				F24FDE6F27D5236900521649 /* PBXTargetDependency */,
 			);
 			name = CursoSnapshotsTests;
+			packageProductDependencies = (
+				F24FDE8B27D524E700521649 /* SnapshotTesting */,
+			);
 			productName = CursoSnapshotsTests;
 			productReference = F24FDE6D27D5236900521649 /* CursoSnapshotsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F24FDE7627D5236900521649 /* CursoSnapshotsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F24FDE8727D5236900521649 /* Build configuration list for PBXNativeTarget "CursoSnapshotsUITests" */;
-			buildPhases = (
-				F24FDE7327D5236900521649 /* Sources */,
-				F24FDE7427D5236900521649 /* Frameworks */,
-				F24FDE7527D5236900521649 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F24FDE7927D5236900521649 /* PBXTargetDependency */,
-			);
-			name = CursoSnapshotsUITests;
-			productName = CursoSnapshotsUITests;
-			productReference = F24FDE7727D5236900521649 /* CursoSnapshotsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,10 +157,6 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = F24FDE5627D5236500521649;
 					};
-					F24FDE7627D5236900521649 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = F24FDE5627D5236500521649;
-					};
 				};
 			};
 			buildConfigurationList = F24FDE5227D5236500521649 /* Build configuration list for PBXProject "CursoSnapshots" */;
@@ -215,13 +168,15 @@
 				Base,
 			);
 			mainGroup = F24FDE4E27D5236500521649;
+			packageReferences = (
+				F24FDE8A27D524E700521649 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = F24FDE5827D5236500521649 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F24FDE5627D5236500521649 /* CursoSnapshots */,
 				F24FDE6C27D5236900521649 /* CursoSnapshotsTests */,
-				F24FDE7627D5236900521649 /* CursoSnapshotsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F24FDE6B27D5236900521649 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F24FDE7527D5236900521649 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +220,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F24FDE7327D5236900521649 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F24FDE7C27D5236900521649 /* CursoSnapshotsUITests.swift in Sources */,
-				F24FDE7E27D5236900521649 /* CursoSnapshotsUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +227,6 @@
 			isa = PBXTargetDependency;
 			target = F24FDE5627D5236500521649 /* CursoSnapshots */;
 			targetProxy = F24FDE6E27D5236900521649 /* PBXContainerItemProxy */;
-		};
-		F24FDE7927D5236900521649 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F24FDE5627D5236500521649 /* CursoSnapshots */;
-			targetProxy = F24FDE7827D5236900521649 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,50 +468,6 @@
 			};
 			name = Release;
 		};
-		F24FDE8827D5236900521649 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftDojo.CursoSnapshotsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CursoSnapshots;
-			};
-			name = Debug;
-		};
-		F24FDE8927D5236900521649 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftDojo.CursoSnapshotsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CursoSnapshots;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,16 +498,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F24FDE8727D5236900521649 /* Build configuration list for PBXNativeTarget "CursoSnapshotsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F24FDE8827D5236900521649 /* Debug */,
-				F24FDE8927D5236900521649 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F24FDE8A27D524E700521649 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F24FDE8B27D524E700521649 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F24FDE8A27D524E700521649 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F24FDE4F27D5236500521649 /* Project object */;
 }
