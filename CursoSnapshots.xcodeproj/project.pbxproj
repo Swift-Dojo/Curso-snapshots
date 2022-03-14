@@ -15,6 +15,7 @@
 		F24FDE6727D5236800521649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24FDE6527D5236800521649 /* LaunchScreen.storyboard */; };
 		F24FDE7227D5236900521649 /* CursoSnapshotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */; };
 		F24FDE8C27D524E700521649 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F24FDE8B27D524E700521649 /* SnapshotTesting */; };
+		F2DA7B1127DDD0AC00FB0934 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = F2DA7B1027DDD0AB00FB0934 /* __Snapshots__ */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F24FDE6827D5236800521649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24FDE6D27D5236900521649 /* CursoSnapshotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CursoSnapshotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoSnapshotsTests.swift; sourceTree = "<group>"; };
+		F2DA7B1027DDD0AB00FB0934 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		F24FDE7027D5236900521649 /* CursoSnapshotsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2DA7B1027DDD0AB00FB0934 /* __Snapshots__ */,
 				F24FDE7127D5236900521649 /* CursoSnapshotsTests.swift */,
 			);
 			path = CursoSnapshotsTests;
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2DA7B1127DDD0AC00FB0934 /* __Snapshots__ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
