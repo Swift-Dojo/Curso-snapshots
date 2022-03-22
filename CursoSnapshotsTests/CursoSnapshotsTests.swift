@@ -24,11 +24,7 @@ class FeedViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor(named: "background")!
     view.addSubview(emptyStateLabel)
-    emptyStateLabel.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-      emptyStateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      emptyStateLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-    ])
+    emptyStateLabel.center(inView: view)
   }
 }
 
