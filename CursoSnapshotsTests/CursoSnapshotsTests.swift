@@ -7,7 +7,6 @@
 
 import XCTest
 @testable import CursoSnapshots
-import SnapshotTesting
 
 class CursoSnapshotsTests: XCTestCase {
   
