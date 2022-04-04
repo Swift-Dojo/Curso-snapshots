@@ -30,19 +30,10 @@ class FeedViewController: UIViewController {
 
 class CursoSnapshotsTests: XCTestCase {
   
-  func test_emptyState_light() {
+  func test_emptyState() {
     let sut = FeedViewController()
-    
-    sut.overrideUserInterfaceStyle = .light
-    
-    assertSnapshot(matching: sut, as: .image(on: .iPhone8))
-  }
-  
-  func test_emptyState_dark() {
-    let sut = FeedViewController()
-    
-    sut.overrideUserInterfaceStyle = .dark
-    
-    assertSnapshot(matching: sut, as: .image(on: .iPhone8))
+        
+    assert(sut, mode: .light, device: .iPhone8)
+    assert(sut, mode: .dark, device: .iPhone8)
   }
 }
