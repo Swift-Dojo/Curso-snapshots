@@ -75,7 +75,8 @@ extension XCTestCase {
     
     assertSnapshot(matching: viewController, 
                    as: .image(on: deviceViewConfig!),
-                   named: "\(named)-\(device.rawValue)",
+                   named: "\(named)-\(device.rawValue)", 
+                   record: isRecordingMode,
                    file: file,
                    testName: testName, 
                    line: line)
